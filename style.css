@@ -1,0 +1,116 @@
+/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet. You don't have to edit this line.*/
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
+body {
+  color: #003049;
+  font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px;
+}
+/* Set the font family for any h1, h2, or h3 heading */
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", Times, serif;
+}
+article {
+  padding: 50px 0;
+}
+article div {
+  text-align: center;
+  width: 100%;
+}
+p {
+  line-height: 1.5;
+}
+/* The div container constrains the content width within the main container to 600px */
+div {
+  margin: auto;
+  width: 600px;
+}
+img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+hr {
+  border: 1px solid black;
+}
+/* Add your solution below */
+.image-circle {
+}
+/* Center all h1 tags */
+h1 {
+  text-align: center;
+  position: relative;
+}
+/* Center the text */
+.centered-text {
+  text-align: center;
+}
+/* Apply circle effect only to the first image */
+img[src="images/pete-thinkful.png"] {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  width: 10%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 3px #003049; /* Added stroke */
+  border-radius: 50%
+  /*clip-path: circle(20%);*/;
+}
+/* Style for the artist span */
+h1 .artist {
+  display: inline-block; /* Makes the span act like a block element */
+  margin-left: 10px; /* Adds space between the stroke and text */
+}
+h1 .artist::before {
+  content: "";
+  position: absolute;
+  left: 59%; /* Center the stroke */
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%); /* Center horizontally and vertically */
+  width: 2px; /* Stroke width */
+  height: 100%; /* Adjust the stroke's height if needed */
+  background-color: #003049; /* Stroke color */
+}
+/* Footer style */
+.footer-center {
+  text-align: center;
+  position: fixed; /* Fixed positioning for the footer */
+  bottom: 0; /* Position at the bottom of the viewport */
+  width: 100%; /* Full width */
+  background-color: #f0f0f0; /* Optional: Add a background color for contrast */
+  padding: -1px 0; /* Optional: Add padding for spacing */
+}
+/* Move the "About" section up */
+article.about {
+  margin-top: -70px; /* Adjust the value as needed */
+}
+/* Style for the navigation bar */
+nav ul {
+  display: flex; /* Make list items arrange horizontally */
+  justify-content: center; /* Center the list items */
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove padding from the unordered list */
+}
+nav li {
+  margin: 0 10px; /* Add some space between list items */
+}
+/* Move the h1 closer to the top */
+h1.centered-text {
+  margin-top: -1px; /* Adjust this value as needed */
+}
+
+/* Change hyperlinks to red */
+a {
+  color: red;
+}
+.image-container h1 {
+    margin-bottom: 2px; /* Adjust the value as needed */
+}
+nav li a {
+  color: red;
+}
+
+.footer-center a { 
+  color: red; 
+}
